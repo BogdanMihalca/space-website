@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+    <head>
+        <meta charset="utf-8">
+        <title>The Known Unknown</title>
+        <meta name="description"
+            content="The known unknown tells the news about most recent discoveries about space and planets">
+        <meta name="keywords" content="Space, planets, exploration, nasa, spacex">
+        <meta name="author" content="Bogdan Mihalca">
+        <!-- responsive media queries meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- the favIncon(top) -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <!-- Javascripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+        <script src="js/scripts.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+        <!-- sccroll animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body class="sospace-body">
+        <header class="default-header socialspace-header">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="galaxy-logo"></a>
+            <div id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li>
+                        <a href="#">Sistemul Solar</a>
+                        <ul>
+                            <li><a href="#">Soarele</a></li>
+                            <li><a href="#">Mercur</a></li>
+                            <li><a href="#">Venus</a></li>
+                            <li><a href="#">Pamant</a></li>
+                            <li><a href="mars.html">Marte</a></li>
+                            <li><a href="#">Jupiter</a></li>
+                            <li><a href="#">Saturn</a></li>
+                            <li><a href="#">Uranus</a></li>
+                            <li><a href="#">Neptun</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Agentii Spatiale</a>
+                        <ul>
+                            <li><a href="#">Nasa</a></li>
+                            <li><a href="#">Roscosmos</a></li>
+                            <li><a href="#">Esa</a></li>
+                            <li><a href="#">Spacex</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Noutati</a></li>
+                    <li><a href="astrodata.html">AstroData</a></li>
+                    <li class="active"><a href="SocialSpace.html">SoSpace</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="hovering-hide">
+                        <a href="#">Sistemul Solar</a>
+                        <div class="planets-menu">
+                            <div class="planets-line">
+                                <img src="images/small-circle.png" alt="circle">
+                            </div>
+                            <div class="planets-slider">
+                                <div><img src="images/planets/mercury.png" alt="mercury"></div>
+                                <div><img src="images/planets/venus.png" alt="venus"></div>
+                                <div><img src="images/planets/earth.png" alt="earth"></div>
+                                <div><img src="images/planets/mars.png" alt="mars"></div>
+                                <div><img src="images/planets/jupiter.png" alt="jupiter"></div>
+                                <div><img src="images/planets/saturn.png" alt="saturn"></div>
+                                <div><img src="images/planets/uranus.png" alt="uranus"></div>
+                                <div><img src="images/planets/neptune.png" alt="neptune"></div>
+                                <div><img src="images/planets/pluto.png" alt="pluto"></div>
+                            </div>
+                            <div class="planet-info">
+                                <div class="planet-info-line">
+                                    <img src="images/small-circle.png" alt="circle" id="left-circle">
+                                    <img src="images/small-circle.png" alt="circle" id="right-circle">
+                                </div>
+                                <div class="planet-info-second-line"></div>
+                                <div class="planet-info-slider">
+                                    <div class="planet-card">
+                                        <h1>Mercur</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">282.1 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Venus</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">349.52 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Pamant</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">0 km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Marte</h1>
+                                        <a href="mars.html"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">240.66 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Jupiter</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">379.1 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Saturn</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">1.4341 b km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Uranus</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">2.5263 b km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Neptun</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">4.6731 b km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Pluto</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p class="distance">4.3307 b km</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="sub-trigger">
+                        <a href="#">Agentii Spatiale</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">Nasa</a></li>
+                            <li><a href="#">Roscosmos</a></li>
+                            <li><a href="#">Esa</a></li>
+                            <li><a href="#">Spacex</a></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Noutati</a></li>
+                    <li><a href="astrodata.html">AstroData</a></li>
+                    <li class="active"><a href="socialspace-login.html">SocialSpace</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="user-info">
+            <div class="profile-astro">
+                <img id="user-photo" src="images/sosspaceimg/profile-user-placeholder.png" alt="">
+                <img id="user-ph-overlay" src="images/sosspaceimg/astro-photo_3.png" alt="">
+            </div>
+            <div class="user-txt-info">
+                <p>Name: <span id="user-name">First name Last name</span></p>
+                <p>Email: <span id="user-email">youremail@doimain.com</span></p>
+            </div>
+            <button id="log-out-btn" onclick="logOut()"></button>
+        </section>
+
+        <section id="threads-section">
+            <h2>Recent Threads</h2>
+            <button class="new-thread-btn make-hv-orange" onclick="openModal()">Create new +</button>
+            <div id="threadsHolder">
+                <div id="loader" class="load"></div>
+
+            </div>
+        </section>
+        <aside id="socialspace-aside">
+            <div class="categories">
+                <h3>Categorii populare:</h3>
+                <a href="#">Istorie</a>
+                <a href="#">Nasa</a>
+                <a href="#">Roscosmos</a>
+                <a href="#">ISS</a>
+                <a href="#">Lansari</a>
+                <a href="#">Astronauti</a>
+                <a href="#">Planete</a>
+                <a href="#">Pamant</a>
+                <a href="#">Space Science</a>
+                <a href="#">Rachete</a>
+                <a href="#">Spacex</a>
+                <a href="#">Esa</a>
+            </div>
+
+        </aside>
+
+        <footer>
+            <div class="footer-wraper">
+                <p class="caption">"The Know Unknow" este website-ul ce faciliteaza accesul la cele mai importante stiri
+                    din domeniu pentru pasionatii de "Necunoscut". "Cunoscutul Necunoscut"-Singura platforma pentru
+                    toate "Cunostintele Necunoscutului"</p>
+                <nav class="footer-links">
+                    <p>Link-uri Utile:</p>
+                    <ul>
+                        <li><a href="https://www.nasa.gov"><img src="images/nasa.png" alt="nasa"></a></li>
+                        <li><a href="http://en.roscosmos.ru"><img src="images/roscosmos.png" alt="roscosmos"></a></li>
+                        <li><a href="https://www.esa.int"><img src="images/esa.png" alt="esa"></a></li>
+                        <li class="spacex-img"><a href="https://www.spacex.com"><img src="images/spacex.png"
+                                    alt="spacex"></a></li>
+                    </ul>
+                </nav>
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <p>&copy; 2020 Toate drepturile rezervate.</p>
+        </footer>
+
+
+        <!-- modal for the creating new threads -->
+        <div id="Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <div class="modal-inner">
+                    <div class="new-thread-form">
+                        <h2>Create a new thread:</h2>
+                        <form>
+                            <label for="newThreadTitle">title:</label>
+                            <input id="newThreadTitle" type="text" name="title"> <br>
+                            <label for="newThreadMessage">Message :</label>
+                            <textarea id="newThreadMessage" name="message" rows="5"></textarea><br>
+                            <p class="newth-terms">Please check before if there's any thread regarding your topic before
+                                creating another
+                                one. Do this in order to avoid duplicates.</p>
+                            <label class="container">I believe this is not duplicate of another<input
+                                    id="newThreadCheck" type="checkbox" checked="1">
+                                <span class="checkmark"></span>
+                            </label><br>
+                            <p id="error-newThread">Error:</p>
+                            <button type='button' id="newThreadCreate" onclick="createNewThread()">Create</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Back to top button -->
+        <a id="back-to-top"><i class="fa fa-sort-up"></i></a>
+
+        <!-- The core Firebase JS -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+        <script src="js/socialspace-main.js"></script>
+
+    </body>
+
+</html>

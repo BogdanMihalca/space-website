@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>The Known Unknown</title>
+        <meta name="description"
+            content="The known unknown tells the news about most recent discoveries about space and planets">
+        <meta name="keywords" content="Space, planets, exploration, nasa, spacex">
+        <meta name="author" content="Bogdan Mihalca">
+        <!-- responsive media queries meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- the favIncon(top) -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <!-- Javascripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    </head>
+
+    <body>
+        <header class="default-header astrodata-header">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="galaxy-logo"></a>
+            <div id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li>
+                        <a href="#">Sistemul Solar</a>
+                        <ul>
+                            <li><a href="#">Soarele</a></li>
+                            <li><a href="#">Mercur</a></li>
+                            <li><a href="#">Venus</a></li>
+                            <li><a href="#">Pamant</a></li>
+                            <li><a href="mars.html">Marte</a></li>
+                            <li><a href="#">Jupiter</a></li>
+                            <li><a href="#">Saturn</a></li>
+                            <li><a href="#">Uranus</a></li>
+                            <li><a href="#">Neptun</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Agentii Spatiale</a>
+                        <ul>
+                            <li><a href="#">Nasa</a></li>
+                            <li><a href="#">Roscosmos</a></li>
+                            <li><a href="#">Esa</a></li>
+                            <li><a href="#">Spacex</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Noutati</a></li>
+                    <li class="active"><a href="astrodata.html">AstroData</a></li>
+                    <li><a href="socialspace-login.html">SocialSpace</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="hovering-hide">
+                        <a href="#">Sistemul Solar</a>
+                        <div class="planets-menu">
+                            <div class="planets-line">
+                                <img src="images/small-circle.png" alt="circle">
+                            </div>
+                            <div class="planets-slider">
+                                <div><img src="images/planets/mercury.png" alt="mercury"></div>
+                                <div><img src="images/planets/venus.png" alt="venus"></div>
+                                <div><img src="images/planets/earth.png" alt="earth"></div>
+                                <div><img src="images/planets/mars.png" alt="mars"></div>
+                                <div><img src="images/planets/jupiter.png" alt="jupiter"></div>
+                                <div><img src="images/planets/saturn.png" alt="saturn"></div>
+                                <div><img src="images/planets/uranus.png" alt="uranus"></div>
+                                <div><img src="images/planets/neptune.png" alt="neptune"></div>
+                                <div><img src="images/planets/pluto.png" alt="pluto"></div>
+                            </div>
+                            <div class="planet-info">
+                                <div class="planet-info-line">
+                                    <img src="images/small-circle.png" alt="circle" id="left-circle">
+                                    <img src="images/small-circle.png" alt="circle" id="right-circle">
+                                </div>
+                                <div class="planet-info-second-line"></div>
+                                <div class="planet-info-slider">
+                                    <div class="planet-card">
+                                        <h1>Mercur</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">282.1 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Venus</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">349.52 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Pamant</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">0 km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Marte</h1>
+                                        <a href="mars.html"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">240.66 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Jupiter</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">379.1 m km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Saturn</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">1.4341 b km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Uranus</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">2.5263 b km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Neptun</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">4.6731 b km</p>
+                                    </div>
+                                    <div class="planet-card">
+                                        <h1>Pluto</h1>
+                                        <a href="#"><img src="images/rocket.png"></a>
+                                        <p>Distanta:</p>
+                                        <p id="distance">4.3307 b km</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="sub-trigger">
+                        <a href="#">Agentii Spatiale</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">Nasa</a></li>
+                            <li><a href="#">Roscosmos</a></li>
+                            <li><a href="#">Esa</a></li>
+                            <li><a href="#">Spacex</a></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Noutati</a></li>
+                    <li class="active"><a href="astrodata.html">AstroData</a></li>
+                    <li><a href="socialspace-login.html">SocialSpace</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="datas-featured">
+            <div id="mothly-featured">
+                <h2 class="featured-mobile-title">Ploaia de stele-Quadrantids:</h2>
+                <div class="rounded-red">
+                    <img src="images/astrodata/shower-icon.png" alt="eclipse">
+                </div>
+                <div class="titles">
+                    <h2 class="feature-desktop-title">Evenimentul lunii:</h2>
+                    <h3>Ploaia de stele-Quadrantids</h3>
+                    <p class="event-date featured-date">22<br>IAN</p>
+                </div>
+                <p class="event-description">Quadrantidele este o ploaie de stele peste medie, cu maxim 40 de meteori pe
+                    oră la vârf. Se crede că este produs de boabele de praf lăsate în urmă de o cometă dispărută
+                    cunoscută drept 2003 EH1, care a fost descoperită în 2003. Ploaia se desfășoară anual în perioada
+                    1-5 ianuarie.</p>
+            </div>
+            <div class="live-datas">
+                <h3>Date Live:</h3>
+                <h4>Ora curenta: <span id="hour-live"></span></h4>
+                <div class="weather-datas">
+                    <h4>Vremea acum:</h4>
+                    <img id="weather-img" src="images/logo.png" alt="weather">
+                    <h5 class="temperature-moved"><span id="temperature"></span> &#8451;</h5>
+                    <h5 id="weather-description"></h5>
+                    <h5>Temp. resimtita: <span id="feels"></span> &#8451;</h5>
+                    <h5>Vant: <span id="wind-speed"></span> km/h la: <span id="wind-direction"></span>&#xb0;</h5>
+                </div>
+                <h4>Soarele rasare: <span id="sunrise"></span></h4>
+                <h4>Soarele apune: <span id="sunset"></span></h4>
+                <h4>Oameni in spatiu: <span id="people">6</span></h4>
+            </div>
+        </section>
+        <section id="datas">
+            <h2>Luna > <select>
+                    <option value="All">Toate</option>
+                    <option value="Jan">Ianuarie</option>
+                    <option value="Feb">Februarie</option>
+                    <option value="Mar">Martie</option>
+                    <option value="Apr">Aprilie</option>
+                    <option value="Mai">Mai</option>
+                    <option value="Jun">Iunie</option>
+                    <option value="Jul">Iulie</option>
+                    <option value="Aug">August</option>
+                    <option value="Sept">Septembrie</option>
+                    <option value="Oct">Octombrie</option>
+                    <option value="Nov">Noiembrie</option>
+                    <option value="Dec">Decembrie</option>
+                </select>
+                <span id="selected-month">Toate</span>
+            </h2>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">22<br>IAN</p>
+                </div>
+                <img class="event-img" src="images/astrodata/shower-icon.png" alt="">
+                <div class="event-text">
+                    <h3>Ploaia de stele-Quadrantids</h3>
+                    <p>Quadrantidele este o ploaie de stele peste medie, cu maxim 40 de meteori pe oră la vârf. Se crede
+                        că este produs de boabele de praf lăsate în urmă de o cometă dispărută cunoscută drept 2003 EH1,
+                        care a fost descoperită în 2003. Ploaia se desfășoară anual în perioada 1-5 ianuarie.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">24<br>IAN</p>
+                </div>
+                <img class="event-img" src="images/astrodata/new_moon.png" alt="">
+                <div class="event-text">
+                    <h3>Luna Noua</h3>
+                    <p>Luna se va localiza în aceeași parte a Pământului ca Soarele și nu va fi vizibilă pe cerul
+                        nopții. Această fază are loc la 01:28 UTC. Acesta este cel mai bun moment al lunii pentru a
+                        observa obiecte slabe, cum ar fi galaxii și ciorchini de stele, deoarece nu există lumina lunii
+                        care să interfereze.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">9<br>Feb</p>
+                </div>
+                <img class="event-img" src="images/astrodata/full-moon.png" alt="">
+                <div class="event-text">
+                    <h3>Luna Plina-Superluna</h3>
+                    <p>Luna va fi localizată în partea opusă a Pământului, deoarece Soarele și fața sa vor fi complet
+                        iluminate. Această fază are loc la ora 05:16 UTC. Această lună plină a fost cunoscută de primii
+                        triburi americani autohtoni ca Luna Lupă Plină, deoarece aceasta a fost perioada anului în care
+                        lupii înfometat împachetau urlând în afara taberelor lor. </p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">10<br>Feb</p>
+                </div>
+                <img class="event-img" src="images/astrodata/mercur.png" alt="">
+                <div class="event-text">
+                    <h3>Mercur la cea mai mare elongatie estica</h3>
+                    <p>Planeta Mercur atinge cea mai mare alungire estică de 47 de grade față de Soare. Acesta este cel
+                        mai bun moment pentru a vedea Mercur, deoarece va fi în cel mai înalt punct deasupra orizontului
+                        pe cerul dimineții. Căutați planeta strălucitoare din cerul de est înainte de răsăritul
+                        soarelui.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">23<br>Feb</p>
+                </div>
+                <img class="event-img" src="images/astrodata/new_moon.png" alt="">
+                <div class="event-text">
+                    <h3>Luna Noua</h3>
+                    <p>Luna se va localiza în aceeași parte a Pământului ca Soarele și nu va fi vizibilă pe cerul
+                        nopții. Această fază are loc la 15:33 UTC. Acesta este cel mai bun moment al lunii pentru a
+                        observa obiecte slabe, cum ar fi galaxii și ciorchini de stele, deoarece nu există lumina lunii
+                        care să interfereze.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">22<br>Apr</p>
+                </div>
+                <img class="event-img" src="images/astrodata/shower-icon.png" alt="">
+                <div class="event-text">
+                    <h3>Ploaia de stele-Lyride</h3>
+                    <p>Lyrids este o ploiae de stele medie, producând de obicei aproximativ 20 de meteori pe oră la
+                        apogeu. Este produs de particulele de praf lăsate în urmă de cometa C / 1861 G1 Thatcher, care a
+                        fost descoperită în 1861. Ploaia se desfășoară anual în perioada 16-25 aprilie. Acesta atinge
+                        anul acesta cota maxima în noaptea de 22 și dimineața de 23.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">5<br>Jun</p>
+                </div>
+                <img class="event-img" src="images/astrodata/moon-eclipse.png" alt="">
+                <div class="event-text">
+                    <h3>Eclipsa Lunara Penumbra</h3>
+                    <p>O eclipsă lunară penumbrală apare atunci când Luna trece prin umbra parțială a Pământului sau
+                        penumbra. În timpul acestui tip de eclipse, Luna se va întuneca ușor, dar nu complet. Eclipsa va
+                        fi vizibilă în toată Europa, Africa, Asia, Australia, Oceanul Indian și Australia.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">21<br>Jun</p>
+                </div>
+                <img class="event-img" src="images/astrodata/solar-eclipse.png" alt="">
+                <div class="event-text">
+                    <h3>Eclipsa Solara Anuala</h3>
+                    <p>O eclipsa solara inelara apare atunci când Luna este prea departe de Pământ pentru a acoperi
+                        complet Soarele. Aceasta are ca rezultat un inel de lumină în jurul Lunii întunecate. Corona
+                        Soarelui nu este vizibilă în timpul unei eclipse inelare. Calea eclipsei va începe în Africa
+                        centrală și va călători prin Arabia Saudită, nordul Indiei și sudul Chinei înainte de a se
+                        încheia în Oceanul Pacific.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date-wrapper">
+                    <p class="event-date">21<br>Dec</p>
+                </div>
+                <img class="event-img" src="images/astrodata/conjunction.png" alt="">
+                <div class="event-text">
+                    <h3>Conjunctie Rara Jupiter-Saturn</h3>
+                    <p>O conjuncție între Jupiter și Saturn va avea loc pe 21 decembrie. Această conjuncție rară a
+                        acestor două planete este cunoscută ca o conjuncție grozavă. Ultima mare conjuncție a avut loc
+                        în anul 2000. Cele două planete luminoase vor apărea doar la 7 minute în arc unul de celălalt pe
+                        cerul nopții. Vor fi atât de aproape încât vor părea să facă o planetă dublă strălucitoare. </p>
+                </div>
+            </div>
+        </section>
+        <aside id="events-date-aside">
+            <h3>Luna</h3>
+            <h4 class="active-data">Toate</h4>
+            <h4>Ianuarie</h4>
+            <h4>Februarie</h4>
+            <h4>Martie</h4>
+            <h4>Aprilie</h4>
+            <h4>Mai</h4>
+            <h4>Iunie</h4>
+            <h4>Iulie</h4>
+            <h4>August</h4>
+            <h4>Septembrie</h4>
+            <h4>Octombrie</h4>
+            <h4>Noiembrie</h4>
+            <h4>Decembrie</h4>
+        </aside>
+        <!-- Back to top button -->
+        <a id="back-to-top"><i class="fa fa-sort-up"></i></a>
+        <footer>
+            <div class="footer-wraper">
+                <p class="caption">"The Know Unknow" este website-ul ce faciliteaza accesul la cele mai importante stiri
+                    din domeniu pentru pasionatii de "Necunoscut". "Cunoscutul Necunoscut"-Singura platforma pentru
+                    toate "Cunostintele Necunoscutului"</p>
+                <nav class="footer-links">
+                    <p>Link-uri Utile:</p>
+                    <ul>
+                        <li><a href="https://www.nasa.gov"><img src="images/nasa.png" alt="nasa"></a></li>
+                        <li><a href="http://en.roscosmos.ru"><img src="images/roscosmos.png" alt="roscosmos"></a></li>
+                        <li><a href="https://www.esa.int"><img src="images/esa.png" alt="esa"></a></li>
+                        <li class="spacex-img"><a href="https://www.spacex.com"><img src="images/spacex.png"
+                                    alt="spacex"></a></li>
+                    </ul>
+                </nav>
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <p>&copy; 2020 Toate drepturile rezervate.</p>
+        </footer>
+    </body>
+
+</html>
