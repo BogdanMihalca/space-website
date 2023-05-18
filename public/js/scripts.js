@@ -107,7 +107,7 @@ $(document).ready(function () {
           lon: long,
           lang: "ro",
           units: "metric",
-          APPID: "3fa86a4616d073eb7f032a49be473707",
+          appid: "3c13e8098fc8c921b36037b5f8b824b4",
         },
         dataType: "json",
         success: function (data) {

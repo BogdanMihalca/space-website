@@ -29,46 +29,56 @@
   src: url("../fonts/Voyager_Heavy.woff");
   font-weight: bold;
 }
+
 @font-face {
   font-family: Voyager;
   src: url("../fonts/Voyager_Light.woff");
 }
+
 @font-face {
   font-family: Merriweather;
   src: url("../fonts/Merriweather_Regular.ttf");
 }
+
 @font-face {
   font-family: Merriweather;
   src: url("../fonts/Merriweather_Bold.ttf");
   font-weight: bold;
 }
+
 @font-face {
   font-family: Merriweather;
   src: url("../fonts/Merriweather_Light.ttf");
   font-weight: 300;
 }
+
 @font-face {
   font-family: Merriweather;
   src: url("../fonts/Merriweather_Italic.ttf");
   font-style: italic;
 }
+
 @font-face {
   font-family: FallingSky;
   src: url("../fonts/FallingSky.otf");
 }
+
 @font-face {
   font-family: FallingSky;
   src: url("../fonts/FallingSkyBold.otf");
   font-weight: bold;
 }
+
 @font-face {
   font-family: FallingSky;
   src: url("../fonts/FallingSkyLight.otf");
   font-weight: 300;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   color: white;
   font-size: 16px;
@@ -79,17 +89,21 @@ body {
   background-color: #0f0e0a;
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
   outline: none;
   color: white;
 }
+
 img {
   width: 100%;
 }
+
 ul li {
   list-style: none;
 }
+
 /*-----------------------------
 	b. Header Styles
 ------------------------------*/
@@ -99,23 +113,28 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .default-header h2 {
   text-shadow: 1px 1px 10px #4b99ff;
   padding-left: 6%;
   font-size: 2rem;
 }
+
 .logo img {
   padding: 0.5rem 1rem;
   width: 150px;
 }
+
 /*mobile menu*/
 .mobile-nav li {
   padding: 0.2rem;
 }
+
 .mobile-nav a {
   color: white;
   text-shadow: 1px 1px 10px #4b99ff;
 }
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -126,26 +145,21 @@ ul li {
   overflow-x: hidden;
   height: 100vh;
   width: 0;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.9) 30%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.9) 30%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.9) 30%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: -webkit-linear-gradient(left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 30%,
+      rgba(0, 0, 0, 1) 100%);
+  background: -o-linear-gradient(left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 30%,
+      rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 30%,
+      rgba(0, 0, 0, 1) 100%);
   transition: all 0.4s linear;
 }
+
 #hamburger-icon {
   width: 35px;
   height: 35px;
@@ -164,6 +178,7 @@ ul li {
   -o-transition: 0.5s ease-in-out;
   cursor: pointer;
 }
+
 #hamburger-icon span {
   display: block;
   position: absolute;
@@ -182,6 +197,7 @@ ul li {
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
 }
+
 #hamburger-icon span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
@@ -189,6 +205,7 @@ ul li {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
+
 #hamburger-icon span:nth-child(2) {
   top: 10px;
   -webkit-transform-origin: left center;
@@ -196,6 +213,7 @@ ul li {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
+
 #hamburger-icon span:nth-child(3) {
   top: 20px;
   -webkit-transform-origin: left center;
@@ -203,6 +221,7 @@ ul li {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
+
 #hamburger-icon.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -211,10 +230,12 @@ ul li {
   top: 0px;
   left: 8px;
 }
+
 #hamburger-icon.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
+
 #hamburger-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -223,32 +244,42 @@ ul li {
   top: 25px;
   left: 8px;
 }
+
 .active a {
   color: yellow;
 }
+
 .desktop-nav,
 .astro-img {
   display: none;
 }
+
 .home-header {
   background-image: url("../images/home_header_background.jpg");
 }
+
 .mars-header {
   background-image: url("../images/mars_header_background.jpg");
 }
+
 .astrodata-header {
   background-image: url("../images/astrodata_header_background.jpg");
 }
+
 .news-header {
   background-image: url("../images/news_header_background.jpg");
 }
-.socialspace-header {
+
+.social-bg {
   background-image: url("../images/socialspace_header_background.jpg");
+  min-height: 100vh;
 }
+
 .socialspace-login-header {
   background-image: url("../images/socialspace_login_header_background.jpg");
   height: initial !important;
 }
+
 .single-news-header {
   height: auto !important;
   margin-bottom: 2rem;
@@ -262,6 +293,7 @@ ul li {
   padding: 2rem 10%;
   position: relative;
 }
+
 .article-normal {
   border: 1px solid #1592e6;
   border-radius: 25px;
@@ -271,9 +303,11 @@ ul li {
   margin-bottom: 2rem;
   background-color: #000000;
 }
+
 .image-title {
   position: relative;
 }
+
 .image-title h2 {
   position: absolute;
   width: 100%;
@@ -281,25 +315,20 @@ ul li {
   margin: 0;
   padding: 1rem;
   font-size: 1.3rem;
-  background: -webkit-linear-gradient(
-    bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: -o-linear-gradient(
-    bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: -webkit-linear-gradient(bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0) 100%);
 }
+
 .image-title h3 {
   position: absolute;
   width: 100%;
@@ -308,45 +337,45 @@ ul li {
   padding: 2rem 1rem;
   font-size: 1rem;
   font-weight: 300;
-  background: -webkit-linear-gradient(
-    bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: -o-linear-gradient(
-    bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: -webkit-linear-gradient(bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0) 100%);
 }
+
 .article-normal .details {
   padding: 0.4rem 1rem;
   box-shadow: 0px 1px 3px -1px white;
 }
+
 .article-normal .details * {
   display: inline-block;
   margin: 0 0.2rem;
   font-weight: 300;
   font-size: 0.8rem;
 }
+
 .article-normal .details img {
   width: 20px;
   vertical-align: bottom;
 }
+
 .article-normal .author {
   font-style: italic;
 }
+
 .article-normal .text-preview {
   margin: 1rem;
 }
+
 .article-normal .view-article {
   position: relative;
   left: 80%;
@@ -354,6 +383,7 @@ ul li {
   bottom: 1rem;
   color: red;
 }
+
 .sml-text-btn {
   font-family: Voyager;
   color: inherit;
@@ -363,12 +393,14 @@ ul li {
   border-bottom: 1.5px solid red;
   padding-bottom: 0.4rem;
 }
+
 .sml-text-btn span {
   cursor: pointer;
   position: relative;
   color: white;
   transition: 0.5s;
 }
+
 .sml-text-btn span:after {
   font-family: "Font Awesome 5 Free";
   content: "\f101";
@@ -381,16 +413,20 @@ ul li {
   right: -20px;
   transition: 0.5s;
 }
+
 .sml-text-btn:hover span {
   padding-right: 25px;
 }
+
 .sml-text-btn:hover span:after {
   opacity: 1 !important;
   right: 0;
 }
+
 .article-normal .article-galery {
   display: none;
 }
+
 .rounded-blue-btn {
   right: 0;
   background-color: #4ecbfe;
@@ -401,29 +437,34 @@ ul li {
   padding: 0.5rem;
   box-shadow: 0px 4px 4px -2px #4b99ff;
 }
+
 .rounded-blue-btn:hover {
   cursor: pointer;
   transition: all 0.5s;
   padding: 0.3rem;
   box-shadow: 0px 8px 8px -2px #4b99ff;
 }
+
 .align-right {
   position: absolute;
   right: 10%;
   bottom: 0.7rem;
 }
+
 /*-------------------------------
 	d. Aside Latest Articles
 ---------------------------------*/
 #latest-articles {
   display: none;
 }
+
 .scrollbar-custom {
   overflow-y: scroll;
   height: 138vh;
   width: 95%;
   margin: 0 auto;
 }
+
 .scrollbar-custom::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -441,24 +482,30 @@ ul li {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #63d2ff;
 }
+
 /*-----------------------------
 	e. NASA Apod Section
 ------------------------------*/
 #nasa-apod {
   padding: 2rem 10%;
 }
+
 #nasa-apod h4 {
   margin: 0.4rem 0;
 }
+
 #nasa-apod span {
   color: #f9f900;
 }
+
 #apod-explanation {
   display: none;
 }
+
 #apod-copy1 {
   display: none;
 }
+
 .apod {
   margin: 1rem auto;
   border-radius: 25px;
@@ -466,21 +513,26 @@ ul li {
   border: 1px solid #f9f900;
   align-self: center;
 }
+
 /*-----------------------------
 	f. live from Space
 ------------------------------*/
 #live-from-space {
   margin-bottom: 2rem;
 }
+
 #live-from-space h2 {
   padding: 1rem 10%;
 }
+
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   padding-top: 25px;
   height: 0;
 }
+
 .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -488,10 +540,12 @@ ul li {
   width: 100%;
   height: 100%;
 }
+
 .video {
   width: 90%;
   margin: 0 auto;
 }
+
 .live-label {
   color: white;
   text-align: center;
@@ -508,6 +562,7 @@ ul li {
   background-color: red;
   border: 2px solid white;
 }
+
 /*------------------------
 	g. Footer Styles
 --------------------------*/
@@ -517,28 +572,34 @@ footer {
   padding: 1rem 10%;
   text-shadow: 1px 1px #4b99ff;
 }
+
 footer ul {
   padding-left: 0;
   margin: 0.1rem;
 }
+
 footer img {
   display: block;
   width: 100px;
   margin: 0 auto;
 }
+
 footer li:hover a {
   transition: all 0.4s;
   text-shadow: 1px 1px 10px white;
 }
+
 footer a {
   font-size: 1rem;
   color: yellow;
 }
+
 footer .caption {
   font-family: FallingSky;
   font-weight: 300;
   text-align: justify;
 }
+
 .footer-links ul {
   display: flex;
   justify-content: center;
@@ -546,31 +607,39 @@ footer .caption {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .footer-links li {
   width: 18%;
   margin: 0 5px;
 }
+
 .footer-links p {
   margin: 0 2.5rem;
 }
+
 .footer-links img {
   width: 50px;
 }
+
 .spacex-img {
   width: calc(100% - 60% - 40px) !important;
 }
+
 .spacex-img img {
   width: 120px !important;
 }
+
 /*-----------------------------
 	h. Planets Page Styles
 ------------------------------*/
 #gen-infos {
   padding: 1rem 6%;
 }
+
 #gen-infos .infos {
   text-align: right;
 }
+
 #gen-infos .infos div {
   text-align: left;
   display: inline-block;
@@ -579,67 +648,85 @@ footer .caption {
   border-radius: 25px;
   padding: 1rem;
 }
+
 #gen-infos .infos h2 {
   font-weight: bold;
 }
+
 #gen-infos .infos p {
   font-weight: bold;
 }
+
 #gen-infos .infos span {
   color: #e0ea02;
 }
+
 #gen-infos .image .line {
   display: none;
 }
+
 #details-info {
   padding: 1rem 6%;
 }
+
 #details-info h2 {
   margin-bottom: 0;
 }
+
 #details-info p {
   margin-top: 0.4rem;
   font-family: FallingSky;
 }
+
 .text-image h2 img {
   width: 80px;
   vertical-align: bottom;
 }
+
 .text-image h2 .spacex {
   width: 200px;
 }
+
 #details-info {
   overflow: hidden;
 }
+
 .text-image {
   display: flex;
   flex-direction: column;
 }
+
 #details-info .moons {
   padding: 1rem 20%;
 }
+
 .text-image .small {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
 }
+
 .text-image .wide {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
 }
+
 #details-info .image-right .wide {
   margin-right: -10%;
   order: 1;
 }
+
 #details-info .image-right .small {
   order: 2;
 }
+
 #details-info .image-left .wide {
   margin-left: -10%;
 }
+
 /*-----------------------------
 	i. Astrodata Page Styles
 ------------------------------*/
@@ -647,6 +734,7 @@ footer .caption {
 #datas {
   margin: 1rem 6%;
 }
+
 #datas h3,
 #mothly-featured h3 {
   color: yellow;
@@ -654,13 +742,16 @@ footer .caption {
   display: inline-block;
   margin: 0.3rem;
 }
+
 #datas-featured {
   position: relative;
 }
+
 #datas-featured h2,
 #datas h2 {
   font-size: 1.2rem;
 }
+
 .rounded-red {
   vertical-align: bottom;
   display: inline-block;
@@ -669,12 +760,15 @@ footer .caption {
   border-radius: 50%;
   border: 1px solid red;
 }
+
 .feature-desktop-title {
   display: none;
 }
+
 .feature-mobil-title {
   margin: 1rem;
 }
+
 .event-date {
   color: red;
   font-weight: 300;
@@ -682,56 +776,69 @@ footer .caption {
   display: inline-block;
   text-align: center;
 }
+
 .featured-date {
   position: absolute;
   top: 0.7rem;
   right: 1rem;
 }
+
 .titles {
   display: inline-block;
 }
+
 .event-description {
   font-family: FallingSky;
   font-weight: 300;
 }
+
 .live-datas h4 {
   margin: 0.2rem;
   font-size: 0.9rem;
 }
+
 .live-datas h5 {
   margin: 0.2rem 0.2rem 0.2rem 1rem;
   font-size: 0.8rem;
 }
+
 .live-datas span {
   color: yellow;
   font-family: FallingSky;
   font-weight: 300;
   font-size: 0.9rem;
 }
+
 #datas {
   margin: 1rem 6%;
 }
+
 .weather-datas {
   display: none;
   position: relative;
 }
+
 #weather-img {
   width: 70px;
   margin-left: 1rem;
   background-color: #1592e6;
   border-radius: 50%;
 }
+
 .temperature-moved {
   position: absolute;
   top: 1.5rem;
   left: 80px;
 }
+
 .temperature-moved {
   font-size: 1.4rem !important;
 }
+
 .temperature-moved span {
   font-size: 1.3rem !important;
 }
+
 #weather-description {
   position: absolute;
   display: inline-block;
@@ -742,27 +849,33 @@ footer .caption {
   top: 3.5rem;
   left: 80px;
 }
+
 #datas {
   margin: 1rem 6%;
 }
+
 #datas select {
   background-color: transparent;
   border: none;
   color: yellow;
   font-size: 0.9rem;
   outline: none;
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
   appearance: none;
   padding: 0.2rem;
   text-align: center;
 }
+
 #datas select option {
   background-color: #000459;
   color: yellow;
   font-size: 0.9rem;
   border: none;
 }
+
 .event-card {
   background-color: #12243b;
   border-radius: 10px;
@@ -773,6 +886,7 @@ footer .caption {
   justify-content: flex-start;
   margin: 1rem 0;
 }
+
 .event-date-wrapper {
   width: 5rem;
   border-right: 2px solid white;
@@ -780,6 +894,7 @@ footer .caption {
   display: inline-flex;
   justify-content: center;
 }
+
 .event-img {
   border: 1px solid red;
   border-radius: 50%;
@@ -787,9 +902,11 @@ footer .caption {
   height: auto;
   margin: 0 0.7rem;
 }
+
 .event-text {
   width: calc(100% - 8rem - 80px);
 }
+
 .event-text p {
   font-family: FallingSky;
   font-weight: 300;
@@ -797,21 +914,26 @@ footer .caption {
   display: none;
   margin: 0 0.5rem 0.5rem 0;
 }
+
 #events-date-aside {
   display: none;
 }
+
 #selected-month {
   display: none;
 }
+
 /*-----------------------------
 	i. News Page Styles
 ------------------------------*/
 .articles-news-page {
   margin-top: -100px !important;
 }
+
 #news-page-aside {
   display: none;
 }
+
 /*-----------------------------
 	k. Single Article Page
 ------------------------------*/
@@ -819,6 +941,7 @@ footer .caption {
   margin: 1rem;
   font-size: 1rem;
 }
+
 .single-article-path a:hover {
   color: yellow;
 }
@@ -826,14 +949,17 @@ footer .caption {
 .single-article * {
   font-family: Merriweather;
 }
+
 .single-article {
   padding: 0 6%;
 }
+
 .single-article h1 {
   margin: 1rem 0;
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .single-article .details {
   font-weight: 300;
   font-size: 0.8rem;
@@ -842,21 +968,25 @@ footer .caption {
   display: inline-block;
   border-top: 1px solid white;
 }
+
 .single-article .details img {
   width: 20px;
   vertical-align: bottom;
 }
+
 .single-article .details img,
 .single-article .details .date,
 .single-article .details .author {
   display: inline-block;
   margin: 0;
 }
+
 .article-text-preview {
   font-size: 1rem;
   font-weight: bold;
   margin: 1rem 0;
 }
+
 .image-copyright {
   color: gray;
   font-weight: 300;
@@ -864,85 +994,106 @@ footer .caption {
   font-style: italic;
   margin: 0.2rem 1rem;
 }
+
 .single-article p {
   margin: 0.5rem 0;
   font-weight: 300;
   font-size: 1rem;
 }
+
 .share-article h2 {
   font-size: 1.2rem;
   font-family: Voyager !important;
   font-weight: 300;
 }
+
 .share-article i {
   font-size: 2rem;
   margin: 0 0.5rem;
 }
+
 .share-article i:hover {
   cursor: pointer;
 }
+
 .fa-facebook-f {
   color: #4267b2;
 }
+
 .fa-twitter {
   color: #1da1f2;
 }
+
 .fa-linkedin-in {
   color: #2867b2;
 }
+
 .fa-reddit-alien {
   color: #ff4500;
 }
+
 .fa-pinterest {
   color: #bd081c;
 }
+
 .fa-flipboard {
   color: #e12828;
 }
+
 .article-comments {
   margin: 2rem 0 0 0;
   padding: 1rem 0;
   border-top: 1px solid gray;
 }
+
 .article-comments h2 {
   font-size: 1.5rem;
   font-family: Voyager !important;
   font-weight: 300;
   margin: 0;
 }
+
 .comment {
   margin: 1rem 2%;
   padding-top: 1rem;
   border-bottom: 1px solid white;
 }
+
 .comment img {
   display: inline-block;
   width: 30%;
 }
+
 .comment .comment-text {
   display: inline-block;
   width: 68%;
 }
+
 .comment .comment-text p {
   font-size: 0.8rem;
 }
+
 .comment .comment-text h2 {
   font-size: 0.9rem;
 }
+
 .comment .comment-text .date {
   font-size: 0.7rem;
 }
+
 .custom-form {
   position: relative;
   padding-bottom: 70px;
   margin-top: 0;
   margin-bottom: 5rem;
 }
+
 .custom-form h2 {
   margin: 0;
   font-family: Voyager;
   font-weight: bold;
 }
+
 .custom-form label,
 .custom-form .container {
   font-family: Voyager;
@@ -954,9 +1105,11 @@ footer .caption {
   margin-top: 1rem;
   color: yellow;
 }
+
 .custom-form textarea {
   width: 100%;
 }
+
 .custom-form input,
 .custom-form textarea {
   width: 60%;
@@ -970,9 +1123,11 @@ footer .caption {
   font-size: 1.2rem;
   box-shadow: 1px 1px 5px white;
 }
+
 .comment-lbl {
   vertical-align: top;
 }
+
 #custom-form-button {
   background-color: #e74c3c;
   color: white;
@@ -985,11 +1140,13 @@ footer .caption {
   position: absolute;
   right: 0;
 }
+
 #custom-form-button:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.5s;
 }
+
 /*custom checkbox from here*/
 .container {
   display: block;
@@ -1024,12 +1181,12 @@ footer .caption {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #e74c3c;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #e74c3c;
 }
 
@@ -1041,7 +1198,7 @@ footer .caption {
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -1057,6 +1214,7 @@ footer .caption {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 /*-----------------------------
 	l. Back To Top Button
 ------------------------------*/
@@ -1075,6 +1233,7 @@ footer .caption {
   visibility: hidden;
   z-index: 1000;
 }
+
 #back-to-top {
   font-weight: normal;
   font-size: 4rem;
@@ -1082,23 +1241,28 @@ footer .caption {
   vertical-align: bottom;
   color: #fff;
 }
+
 #back-to-top:hover {
   cursor: pointer;
   background-color: #4ecbfe;
 }
+
 #back-to-top:active {
   background-color: #555;
 }
+
 #back-to-top.show {
   opacity: 1;
   visibility: visible;
 }
+
 /*-----------------------------
 	m. Social Space Login Page
 ------------------------------*/
 .footer-login {
   background-color: transparent;
 }
+
 .container-login {
   display: block;
   margin: 10px auto 50px auto;
@@ -1110,6 +1274,7 @@ footer .caption {
   border-radius: 25px;
   box-shadow: 5px 5px 30px #696969;
 }
+
 .container-login .header {
   color: #f5f5f5;
   padding: 15px;
@@ -1121,6 +1286,7 @@ footer .caption {
   letter-spacing: 5px;
   font-size: 2em;
 }
+
 .container-login #input-usern,
 .container-login #input-passw,
 .container-login #input-passw2,
@@ -1138,6 +1304,7 @@ footer .caption {
   width: 300px;
   font-family: FallingSky;
 }
+
 .container-login #input-usern:hover,
 .container-login #input-passw:hover,
 .container-login #input-passw2:hover,
@@ -1147,6 +1314,7 @@ footer .caption {
   border-top: 3px solid #ff9800;
   border-bottom: 3px solid #ff9800;
 }
+
 .container-login #input-usern:focus,
 .container-login #input-passw:focus,
 .container-login #input-passw2:focus,
@@ -1154,6 +1322,7 @@ footer .caption {
   font-size: 20px;
   padding: 17px;
 }
+
 .container-login ::placeholder {
   color: #ff9800;
   font-size: 17px;
@@ -1172,36 +1341,42 @@ footer .caption {
   left: 50%;
   transform: translate(-50%);
 }
+
 .uname {
   position: absolute;
   top: 0px;
   left: 50%;
   transform: translate(-50%);
 }
+
 .usernl {
   position: absolute;
   top: 70px;
   left: 50%;
   transform: translate(-50%);
 }
+
 .passw2 {
   position: absolute;
   top: 210px;
   left: 50%;
   transform: translate(-50%);
 }
+
 .passw {
   position: absolute;
   top: 140px;
   left: 50%;
   transform: translate(-50%);
 }
+
 .passw-l {
   position: absolute;
   top: 120px;
   left: 50%;
   transform: translate(-50%);
 }
+
 #error-login {
   color: #e0ea02;
   font-size: 12px;
@@ -1210,6 +1385,7 @@ footer .caption {
   margin-left: 8%;
   display: none;
 }
+
 #error-create {
   color: #e0ea02;
   font-size: 12px;
@@ -1218,6 +1394,7 @@ footer .caption {
   margin-left: 8%;
   display: none;
 }
+
 .button-login {
   position: absolute;
   left: 50%;
@@ -1235,6 +1412,7 @@ footer .caption {
   transition: all 0.5s;
   letter-spacing: 2.5px;
 }
+
 .button-createacc {
   position: absolute;
   left: 50%;
@@ -1252,6 +1430,7 @@ footer .caption {
   transition: all 0.5s;
   letter-spacing: 2.5px;
 }
+
 .button-newacc {
   position: absolute;
   left: 40%;
@@ -1267,6 +1446,7 @@ footer .caption {
   outline: none;
   transition: all 0.5s;
 }
+
 .button-tologgin {
   position: absolute;
   left: 40%;
@@ -1282,6 +1462,7 @@ footer .caption {
   outline: none;
   transition: all 0.5s;
 }
+
 .google-button {
   position: absolute;
   top: 500px;
@@ -1302,10 +1483,12 @@ footer .caption {
   transition-timing-function: ease-in-out;
   padding: 0;
 }
+
 .google-button:focus,
 .google-button:hover {
   box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
 .google-button__icon {
   display: inline-block;
   vertical-align: middle;
@@ -1314,6 +1497,7 @@ footer .caption {
   height: 18px;
   box-sizing: border-box;
 }
+
 /*-----------------------------
 	n. Social Space Main Page
 ------------------------------*/
@@ -1331,30 +1515,36 @@ footer .caption {
   position: relative;
   width: 25%;
 }
+
 #user-photo {
   width: 50px;
   position: relative;
   left: 15px;
   top: 15px;
 }
+
 #user-ph-overlay {
   width: 80px;
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .user-txt-info {
   margin-top: 10px;
   width: 60%;
 }
+
 .user-info p {
   font-size: 0.9rem;
 }
+
 #user-name,
 #user-email {
   color: yellow;
   font-family: "FAllingSky";
 }
+
 #log-out-btn {
   background: url("../images/sosspaceimg/log-out.png");
   background-size: contain;
@@ -1364,20 +1554,25 @@ footer .caption {
   width: 50px;
   height: 50px;
 }
+
 #log-out-btn:hover {
   transition: all ease 0.2s;
   width: 60px;
   height: 60px;
 }
+
 #threads-section {
   margin-left: 5%;
 }
-#threads-section > h2 {
+
+#threads-section>h2 {
   margin-left: 2%;
 }
+
 #socialspace-aside {
   display: none;
 }
+
 #threadsHolder {
   margin-bottom: 100px;
   margin-top: 100px;
@@ -1385,19 +1580,23 @@ footer .caption {
   border-right: 2px solid white;
   box-shadow: 3px 0 2px -2px #0364d1;
 }
+
 .sospace-body {
   background-color: #020202 !important;
 }
+
 .blue-shadow-card {
   background-color: #12243b;
   border: 2px solid white;
   box-shadow: 3px 3px 4px 1px #0364d1;
 }
+
 .thread-article {
   border-radius: 15px 15px 0 15px;
   margin: 10px 20px 50px 0;
   position: relative;
 }
+
 .article-conn-line {
   width: 25px;
   height: 2px;
@@ -1407,6 +1606,7 @@ footer .caption {
   left: calc(100% - 1px);
   box-shadow: 3px 3px 10px #0364d1;
 }
+
 .thread-article h3 {
   border-bottom: 1px solid white;
   padding-left: 10px;
@@ -1414,22 +1614,27 @@ footer .caption {
   margin-bottom: 5px;
   font-size: 1em;
 }
+
 .thread-article p {
   margin: 5px 10px;
   color: yellow;
   font-family: FallingSky;
   font-size: 0.9em;
 }
+
 .thread-article .message {
   font-size: 0.7em;
 }
+
 .right-article-part {
   border-top: 1px solid gray;
   text-align: right;
 }
+
 .right-article-part div {
   text-align: left;
 }
+
 .right-article-part h5 {
   margin: 5px 10px 5px 5px;
   color: gainsboro;
@@ -1450,6 +1655,7 @@ footer .caption {
   justify-self: right;
   outline: none;
 }
+
 .load {
   position: relative;
   left: 40%;
@@ -1457,24 +1663,25 @@ footer .caption {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    transparent 40%,
-    rgb(55, 75, 255)
-  );
+  background: linear-gradient(45deg,
+      transparent,
+      transparent 40%,
+      rgb(55, 75, 255));
   animation: animate 1s linear infinite;
 }
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
     filter: hue-rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
     filter: hue-rotate(90deg);
   }
 }
+
 .load:before {
   content: "";
   position: absolute;
@@ -1486,6 +1693,7 @@ footer .caption {
   border-radius: 50%;
   z-index: 1000;
 }
+
 .load:after {
   content: "";
   position: absolute;
@@ -1493,17 +1701,16 @@ footer .caption {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    transparent 40%,
-    rgb(55, 75, 255)
-  );
+  background: linear-gradient(45deg,
+      transparent,
+      transparent 40%,
+      rgb(55, 75, 255));
   border-radius: 50%;
   z-index: 1000;
   z-index: 1;
   filter: blur(20px);
 }
+
 .new-thread-btn {
   background-color: #4ecbfe;
   border-radius: 5rem;
@@ -1517,9 +1724,11 @@ footer .caption {
   margin-bottom: 20px;
   transition: all 0.5s;
 }
+
 .make-hv-orange:hover {
   background-color: #ff9800;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -1533,6 +1742,7 @@ footer .caption {
   background-color: rgb(18 24 32);
   transition: all 2s;
 }
+
 .modal-content {
   background-color: #12243b;
   margin: auto;
@@ -1540,6 +1750,7 @@ footer .caption {
   border: 1px solid #888;
   width: 90%;
 }
+
 .close-modal {
   color: #aaaaaa;
   position: relative;
@@ -1555,9 +1766,11 @@ footer .caption {
   text-decoration: none;
   cursor: pointer;
 }
+
 .modal-inner {
   margin-top: -70px;
 }
+
 .new-thread-form label {
   font-weight: 300;
   font-size: 1rem;
@@ -1565,6 +1778,7 @@ footer .caption {
   display: block;
   margin: 30px 0 10px 0;
 }
+
 .new-thread-form input,
 .new-thread-form textarea {
   width: 100%;
@@ -1579,6 +1793,7 @@ footer .caption {
   font-weight: 300;
   box-shadow: 1px 1px 5px white;
 }
+
 #newThreadCreate {
   color: white;
   background-color: #e74c3c;
@@ -1592,20 +1807,24 @@ footer .caption {
   transform: translateX(-100%);
   transition: all 0.5s;
 }
+
 #newThreadCreate:hover {
   background-color: yellow;
   color: #e74c3c;
 }
+
 #error-newThread {
   color: red;
   font-size: 12px;
   font-family: FallingSky;
   display: none;
 }
+
 .newth-terms {
   font-size: 0.8em;
   font-family: FallingSky;
 }
+
 /*-----------------------------
 	o. SocialSpace Thread Page
 ------------------------------*/
@@ -1614,24 +1833,29 @@ footer .caption {
   margin-right: 3%;
   border-bottom: 1px solid white;
 }
+
 .thread-details h5 {
   margin: 5px 0;
   color: gray;
 }
+
 .th-title-back {
   padding: 0 10px;
   display: inline-block;
   border-bottom: 1px solid white;
   font-size: 1.1em;
 }
+
 #messageHolder {
   margin-right: 3%;
   border-right: 2px solid white;
   box-shadow: 3px 0 2px -2px #0364d1;
 }
+
 .th-title-back {
   color: yellow;
 }
+
 .message-article {
   border-radius: 10px 10px 0 10px;
   margin: 25px 0 25px 0;
@@ -1649,26 +1873,31 @@ footer .caption {
   padding-right: 3%;
   border-bottom: 1px solid gray;
 }
+
 .profile-astro-msg {
   width: 100px;
   position: relative;
 }
+
 .user-photo-msg {
   padding-top: 17px;
   padding-left: 18px;
   width: 60px;
 }
+
 .user-ph-overlay-msg {
   position: absolute;
   width: 70px;
   left: 5%;
   top: 0;
 }
+
 .user-name-msg {
   color: yellow;
   font-size: 1em;
   margin-bottom: 0;
 }
+
 .message-box p {
   font-family: FallingSky;
   font-weight: 300;
@@ -1681,14 +1910,17 @@ footer .caption {
   border-top: 1px solid white;
   font-size: 0.8em;
 }
+
 #post-message {
   margin-bottom: 50px;
 }
+
 #post-message h2 {
   font-size: 1em;
   border-top: 1px solid white;
   display: inline-block;
 }
+
 #error-newMessage {
   color: red;
   font-size: 12px;
@@ -1697,6 +1929,7 @@ footer .caption {
   margin-top: -20px;
   display: none;
 }
+
 #newMessage {
   font-family: FallingSky;
   font-weight: 300;
@@ -1710,10 +1943,12 @@ footer .caption {
   border-radius: 5px 5px 0 5px;
   background-color: rgba(0, 29, 96, 0.5);
 }
+
 #newMessage[contenteditable]:empty::before {
   content: "write a message";
   color: gray;
 }
+
 #newMessagePost {
   margin-right: 5%;
   padding: 5px 10px;
@@ -1727,9 +1962,11 @@ footer .caption {
   transition: all 0.5s;
   outline: none;
 }
+
 #newMessagePost:hover {
   background-color: red;
 }
+
 .dlt-msg-btn {
   background-color: transparent;
   color: red;
@@ -1737,6 +1974,7 @@ footer .caption {
   font-size: 1.5em;
   cursor: pointer;
 }
+
 .upt-msg-btn {
   background-color: transparent;
   color: #4ecbfe;
@@ -1744,10 +1982,12 @@ footer .caption {
   font-size: 1.5em;
   cursor: pointer;
 }
+
 .auth-msg-options {
   position: absolute;
   right: 20px;
 }
+
 #ConfirmDelete {
   background-color: tomato;
   color: white;
@@ -1755,6 +1995,7 @@ footer .caption {
   border-radius: 5px;
   padding: 5px 10px;
 }
+
 #CancelDelete {
   margin-left: 20px;
   background-color: #4b99ff;
@@ -1763,6 +2004,7 @@ footer .caption {
   border-radius: 5px;
   padding: 5px 10px;
 }
+
 #updateMessage {
   display: block;
   min-height: 40px;
@@ -1772,6 +2014,7 @@ footer .caption {
   border-radius: 5px 5px 0 5px;
   background-color: rgba(250, 204, 0, 0.8);
 }
+
 #error-editMessage {
   color: red;
   font-size: 12px;
@@ -1780,6 +2023,7 @@ footer .caption {
   margin-top: -20px;
   display: none;
 }
+
 #updateMessagePost {
   color: white;
   background-color: mediumseagreen;
@@ -1792,6 +2036,7 @@ footer .caption {
   right: 90px;
   bottom: 30px;
 }
+
 #cancelUpdateMessage {
   color: white;
   background-color: #4b99ff;
@@ -1804,18 +2049,21 @@ footer .caption {
   right: 10px;
   bottom: 30px;
 }
+
 /*-------------------------------
 	x. Tablet & Desktop Styles
 ---------------------------------*/
 
 /*Tablet*/
 @media only screen and (min-width: 768px) {
+
   /*-----------------------------
 		b. Header Styles
 	------------------------------*/
   .default-header {
     height: 300px;
   }
+
   .default-header h2 {
     padding: 0;
     position: absolute;
@@ -1829,9 +2077,11 @@ footer .caption {
   .article-normal {
     display: flex;
   }
+
   .article-normal .content-preview {
     width: 70%;
   }
+
   .article-normal .article-galery {
     display: inline-flex;
     flex-direction: column;
@@ -1839,9 +2089,11 @@ footer .caption {
     flex-wrap: wrap;
     width: 30%;
   }
+
   .article-normal .article-galery div {
     flex-grow: 1;
   }
+
   .image-title .tag-top {
     position: absolute;
     top: 1rem;
@@ -1849,6 +2101,7 @@ footer .caption {
     background: rgba(0, 0, 0, 0.5);
     padding: 0.3rem 0.7rem;
   }
+
   .image-title .tag-top p {
     font-family: Voyager;
     font-weight: bold;
@@ -1856,6 +2109,7 @@ footer .caption {
     letter-spacing: 0.2rem;
     margin: 0;
   }
+
   /*-----------------------------
 		e. NASA Apod Section
 	------------------------------*/
@@ -1872,13 +2126,16 @@ footer .caption {
   footer {
     padding: 1rem 5%;
   }
+
   .footer-nav ul {
     display: flex;
     justify-content: space-between;
   }
+
   footer li {
     margin: 0.2rem 0.5rem;
   }
+
   footer .footer-wraper {
     text-align: left;
     display: flex;
@@ -1887,19 +2144,23 @@ footer .caption {
     font-weight: bold;
     flex-wrap: wrap;
   }
+
   footer img {
     display: inline-block;
     width: 150px;
     margin: 0 0.5rem;
     order: 1;
   }
+
   .footer-links {
     order: 2;
     margin-left: 2rem;
   }
+
   .footer-links ul {
     margin-left: auto;
   }
+
   /*-----------------------------
 		h. Planets Page Styles
 	------------------------------*/
@@ -1907,17 +2168,20 @@ footer .caption {
     padding: 1rem 4%;
     margin-top: -20%;
   }
+
   #gen-infos .infos {
     margin-top: 15%;
     vertical-align: top;
     display: inline-block;
     width: 45%;
   }
+
   #gen-infos .image {
     display: inline-block;
     width: 54%;
     position: relative;
   }
+
   #gen-infos .image .line {
     display: initial;
     width: 65%;
@@ -1928,6 +2192,7 @@ footer .caption {
     top: 15%;
     left: -0.5rem;
   }
+
   #gen-infos .image .line img {
     width: 50px;
     height: 50px;
@@ -1935,12 +2200,15 @@ footer .caption {
     top: -25px;
     right: -25px;
   }
+
   #details-info .image-right .small {
     margin-top: -130px;
   }
+
   #details-info .image-left .small {
     margin-top: -80px;
   }
+
   /*-----------------------------
 		i. Astrodata Page Styles
 	------------------------------*/
@@ -1949,27 +2217,34 @@ footer .caption {
     justify-content: space-between;
     align-items: flex-end;
   }
+
   #mothly-featured,
   .live-datas {
     display: inline-block;
   }
+
   #mothly-featured {
     width: 60%;
     position: relative;
     order: 2;
   }
+
   .live-datas {
     width: 40%;
   }
+
   .event-date {
     font-size: 1.5rem;
   }
+
   .event-text p {
     display: block;
   }
+
   .event-img {
     width: 100px;
   }
+
   /*-----------------------------
 		k. Single Article Page
 	------------------------------*/
@@ -1978,44 +2253,55 @@ footer .caption {
     width: 100%;
     margin: 1rem auto;
   }
+
   .image-copyright {
     margin-left: 6%;
   }
+
   .single-article {
     padding: 0 12%;
   }
+
   .comment {
     width: 80%;
   }
+
   .comment img {
     display: inline-block;
     width: 150px;
   }
+
   .comment .comment-text {
     display: inline-block;
     width: calc(100% - 160px);
   }
+
   .comment .comment-text p {
     font-size: 1rem;
   }
+
   .comment .comment-text h2 {
     font-size: 1.2rem;
   }
+
   .comment .comment-text .date {
     font-size: 0.9rem;
   }
+
   /*-----------------------------
 	m. Social Space Login Page
   ------------------------------*/
   .user-txt-info {
     width: initial;
   }
+
   /*-----------------------------
 	n. Social Space Main Page
   ------------------------------*/
   .user-info {
     margin-top: -15vh;
   }
+
   .user-info {
     margin-top: -10vh;
     margin-bottom: 100px;
@@ -2023,14 +2309,17 @@ footer .caption {
     align-items: center;
     justify-content: left;
   }
+
   .profile-astro {
     width: auto;
     margin: 0 50px;
   }
+
   .right-article-part h5 {
     display: inline-block;
     margin-left: 5%;
   }
+
   .modal-content {
     width: 75%;
   }
@@ -2038,6 +2327,7 @@ footer .caption {
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
+
   /*------------------------
 		b. Header Styles
 	--------------------------*/
@@ -2045,11 +2335,13 @@ footer .caption {
     width: 230px;
     margin: 0 auto;
   }
+
   /*hidding the mobile navigation*/
   .mobile-nav,
   #hamburger-icon {
     display: none;
   }
+
   .default-header {
     height: 100vh;
   }
@@ -2060,27 +2352,32 @@ footer .caption {
     border-bottom: 1px solid white;
     box-shadow: 0px 4px 2px -2px #4b99ff;
   }
+
   .desktop-nav {
     width: calc(80% - 4rem);
     display: inline-block;
     vertical-align: top;
     margin: 0.5rem;
   }
-  .desktop-nav > ul {
+
+  .desktop-nav>ul {
     display: flex;
     justify-content: space-around;
     padding-left: 0;
   }
+
   .desktop-nav li {
     padding: 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
-  .desktop-nav > ul > li:hover > a {
+
+  .desktop-nav>ul>li:hover>a {
     transition: 0.2s all;
     border-bottom: 1px solid white;
     box-shadow: 0px 4px 2px -2px #4b99ff;
   }
+
   .sub-nav {
     z-index: 1;
     position: absolute;
@@ -2094,6 +2391,7 @@ footer .caption {
     box-shadow: -2px 2px 2px #4b99ff;
     visibility: hidden;
   }
+
   .desktop-nav a {
     color: white;
     padding: 0.2rem;
@@ -2102,11 +2400,13 @@ footer .caption {
     letter-spacing: 2px;
     text-shadow: 1px 1px #4b99ff;
   }
+
   .planets-menu {
     position: absolute;
     width: 75%;
     z-index: 2;
   }
+
   .planets-line {
     height: 18vh;
     width: 5rem;
@@ -2118,6 +2418,7 @@ footer .caption {
     border-radius: 2px;
     box-shadow: -2px 2px 2px #4b99ff;
   }
+
   .planets-line img {
     width: 50px;
     height: 50px;
@@ -2126,33 +2427,39 @@ footer .caption {
     right: -25px;
     z-index: 2;
   }
+
   .planets-slider {
     display: inline-block;
     width: 70%;
     margin-top: 1rem;
     margin-left: 5.3rem;
   }
+
   .slick-list {
     padding: 60px 0 100px 0 !important;
     outline: none !important;
   }
+
   .slick-slide {
     outline: none !important;
     margin: 0.5rem 1rem;
     cursor: pointer;
   }
+
   .slick-center {
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     transform: scale(1.5) translateY(45px);
     transition: transform 0.5s ease;
   }
+
   .planet-info {
     text-align: center;
     margin-top: -40px;
     position: relative;
     margin-left: 85px;
   }
+
   .planet-info-line {
     position: relative;
     width: 20%;
@@ -2163,6 +2470,7 @@ footer .caption {
     height: 50px;
     box-shadow: 0px 4px 4px -2px #4b99ff;
   }
+
   .planet-info-line #left-circle {
     width: 50px;
     height: 50px;
@@ -2171,6 +2479,7 @@ footer .caption {
     left: -25px;
     z-index: 5;
   }
+
   .planet-info-line #right-circle {
     width: 50px;
     height: 50px;
@@ -2179,6 +2488,7 @@ footer .caption {
     right: -25px;
     z-index: 5;
   }
+
   .planet-info-second-line {
     width: 50%;
     height: 20vh;
@@ -2190,6 +2500,7 @@ footer .caption {
     box-shadow: 2px 2px 2px #4b99ff;
     z-index: 2;
   }
+
   .planet-info-slider {
     display: inline-block;
     position: absolute;
@@ -2199,6 +2510,7 @@ footer .caption {
     top: 20vh;
     transform: translateY(-60px);
   }
+
   .planet-card {
     background-color: rgba(25, 25, 112, 0.7);
     border: 2px solid white;
@@ -2208,36 +2520,44 @@ footer .caption {
     text-align: left;
     box-shadow: 0px 1px 5px 1px #4b99ff;
   }
+
   .planet-card h1 {
     margin: 0;
     font-size: 1.7rem;
     font-weight: bold;
     text-shadow: 1px 1px #4b99ff;
   }
+
   .planet-card a {
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 1rem;
   }
+
   .planet-card img {
     width: 50px;
   }
+
   .planet-card p {
     font-size: 1.3rem;
     margin: 0.5rem;
   }
+
   .planet-card .distance {
     font-size: 1rem;
     text-align: right;
     margin-right: 90px;
   }
+
   .planet-info .slick-slider {
     position: absolute;
   }
+
   .planet-info .slick-list {
     padding: 0 !important;
   }
+
   .astro-img {
     display: initial;
     position: absolute;
@@ -2246,14 +2566,17 @@ footer .caption {
     width: 25%;
     opacity: 0.3;
   }
+
   .hovering-hide .planets-menu {
     visibility: hidden;
   }
+
   .hovering-hide:hover .planets-menu,
   .sub-trigger:hover .sub-nav {
     visibility: visible;
     z-index: 3;
   }
+
   .default-header h2 {
     font-size: 5rem;
     bottom: 40%;
@@ -2268,6 +2591,7 @@ footer .caption {
     width: 60%;
     display: inline-block;
   }
+
   .align-right {
     bottom: 0;
     right: 3%;
@@ -2288,9 +2612,11 @@ footer .caption {
     box-shadow: 3px 3px 10px #0364d1;
     background-color: rgba(0, 76, 255, 0.3);
   }
+
   #latest-articles h2 {
     text-align: center;
   }
+
   #latest-articles .forced-overflow {
     height: 10000px;
   }
@@ -2301,9 +2627,11 @@ footer .caption {
     border-radius: 15px;
     overflow: hidden;
   }
+
   .image-tag {
     position: relative;
   }
+
   .image-tag p {
     position: absolute;
     top: 0;
@@ -2314,12 +2642,14 @@ footer .caption {
     font-weight: 300;
     padding: 0.5rem 1rem;
   }
+
   .article-card-small .details {
     background-color: black;
     margin-top: -10px;
     padding: 1rem;
     position: relative;
   }
+
   .article-card-small .details h3 {
     display: inline-block;
     width: 48%;
@@ -2330,9 +2660,11 @@ footer .caption {
     font-weight: bold;
     margin: 0 1%;
   }
+
   .article-card-small .details p {
     font-family: FallingSky;
   }
+
   .article-card-small .details .category-tag {
     font-size: 0.8rem;
     width: 50%;
@@ -2345,11 +2677,13 @@ footer .caption {
     top: 0.5rem;
     right: 0;
   }
+
   .view-latest {
     position: relative;
     left: 70%;
     bottom: 1rem;
   }
+
   /*-----------------------------
 		e. NASA Apod Section
 	------------------------------*/
@@ -2359,25 +2693,20 @@ footer .caption {
     margin: 2rem 0;
     padding: 0 5%;
     background: rgb(15, 14, 10);
-    background: -webkit-linear-gradient(
-      left,
-      rgba(15, 14, 10, 1) 0%,
-      rgba(15, 14, 10, 1) 40%,
-      rgba(136, 153, 255, 1) 100%
-    );
-    background: -o-linear-gradient(
-      left,
-      rgba(15, 14, 10, 1) 0%,
-      rgba(15, 14, 10, 1) 40%,
-      rgba(136, 153, 255, 1) 100%
-    );
-    background: linear-gradient(
-      to right,
-      rgba(15, 14, 10, 1) 0%,
-      rgba(15, 14, 10, 1) 40%,
-      rgba(136, 153, 255, 0.6) 100%
-    );
+    background: -webkit-linear-gradient(left,
+        rgba(15, 14, 10, 1) 0%,
+        rgba(15, 14, 10, 1) 40%,
+        rgba(136, 153, 255, 1) 100%);
+    background: -o-linear-gradient(left,
+        rgba(15, 14, 10, 1) 0%,
+        rgba(15, 14, 10, 1) 40%,
+        rgba(136, 153, 255, 1) 100%);
+    background: linear-gradient(to right,
+        rgba(15, 14, 10, 1) 0%,
+        rgba(15, 14, 10, 1) 40%,
+        rgba(136, 153, 255, 0.6) 100%);
   }
+
   .apod-details,
   .apod {
     align-self: center;
@@ -2385,46 +2714,55 @@ footer .caption {
     width: 40%;
     margin: 1rem 2.2%;
   }
+
   .apod {
     border: 1.5px solid #f9f900;
     margin: 2.5rem 2.5%;
     width: 40%;
     box-shadow: 4px 4px 10px -2px white;
   }
+
   /*-----------------------------
 		f. live from Space
 	------------------------------*/
   .video {
     width: 70%;
   }
+
   .live-label {
     font-size: 1.5rem;
     top: -1rem;
   }
+
   /*-----------------------------
 		g. Footer Styles
 	------------------------------*/
   footer {
     padding: 1rem 2%;
   }
+
   .footer-wrapper {
     justify-content: center;
     flex-wrap: nowrap;
   }
+
   .footer-links img {
     width: 70px;
   }
+
   footer .caption {
     order: 2;
     width: 35%;
     font-size: 0.9rem;
   }
+
   /*-----------------------------
 		h. Planets Page Styles
 	------------------------------*/
   #details-info .moons {
     padding: 0;
   }
+
   .text-image {
     margin: 2rem 0;
     display: flex;
@@ -2432,6 +2770,7 @@ footer .caption {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   .text-image .small {
     width: 38%;
     display: flex;
@@ -2439,6 +2778,7 @@ footer .caption {
     align-items: center;
     align-content: center;
   }
+
   .text-image .wide {
     display: flex;
     flex-wrap: wrap;
@@ -2446,60 +2786,76 @@ footer .caption {
     align-content: center;
     width: 58%;
   }
+
   #details-info .image-right .small,
   #details-info .image-left .small {
     width: 40%;
     margin-top: 0;
   }
+
   #details-info .image-right .wide {
     width: 70%;
     order: 3;
   }
+
   #details-info .image-left .wide {
     width: 70%;
   }
+
   /*-----------------------------
 		i. Astrodata Page Styles
 	------------------------------*/
   #datas-featured {
     margin-top: -50vh;
   }
+
   #mothly-featured {
     width: 50%;
   }
+
   .featured-date {
     right: calc(100% - 25rem);
   }
+
   .live-datas {
     padding: 1rem;
   }
+
   .live-datas h4 {
     font-size: 1rem;
   }
+
   .featured-mobile-title {
     display: none;
   }
+
   .feature-desktop-title {
     display: block;
   }
+
   .live-datas h5 {
     font-size: 0.9rem;
   }
+
   .live-datas span {
     font-size: 1rem;
   }
+
   #datas select {
     display: none;
   }
+
   #datas {
     display: inline-block;
     width: 60%;
     margin: 1rem 4% 4rem 4%;
   }
+
   .event-card {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
   #events-date-aside {
     display: inline-block;
     margin-top: 7rem;
@@ -2508,37 +2864,46 @@ footer .caption {
     padding-right: 3;
     border-left: 1px solid white;
   }
+
   #events-date-aside * {
     padding-left: 3rem;
   }
+
   #events-date-aside h3 {
     font-size: 1.3rem;
     color: yellow;
     margin-bottom: 2rem;
   }
+
   #events-date-aside h4 {
     text-shadow: 1px 1px #e600ff;
   }
+
   #events-date-aside h4:hover {
     cursor: pointer;
     color: yellow;
   }
+
   .active-data {
     border-bottom: 1px solid white;
   }
+
   .event-text p {
     font-size: 1rem;
   }
+
   #selected-month {
     display: inline;
     color: yellow;
   }
+
   /*-----------------------------
 		i. News Page Styles
 	------------------------------*/
   .articles-news-page {
     margin-top: -25vh !important;
   }
+
   #news-page-aside {
     display: inline-block;
     width: 30%;
@@ -2546,7 +2911,9 @@ footer .caption {
     margin-top: -20vh;
     padding-left: 3rem;
   }
-  #news-page-aside .categories a {
+
+  #news-page-aside .categories a,
+  #socialspace-aside .categories a {
     display: inline-block;
     margin: 0.5rem;
     letter-spacing: 0.1rem;
@@ -2554,70 +2921,88 @@ footer .caption {
     border: 1px solid #4ecbfe;
     border-radius: 25px;
   }
-  #news-page-aside .categories a:hover {
+
+  #news-page-aside .categories a:hover,
+  #socialspace-aside .categories a:hover {
     color: #4ecbfe;
     box-shadow: 1px 1px 3px white;
   }
-  #news-page-aside .categories h3 {
+
+  #news-page-aside .categories h3,
+  #socialspace-aside .categories h3 {
     color: #4ecbfe;
   }
+
   #most-read-articles .news-side-art {
     width: 80% !important;
     border: 1px solid yellow;
     box-shadow: 3px 2px 10px white;
     margin: 2rem auto 2rem 0;
   }
+
   #most-read-articles {
     margin-top: 5rem;
   }
+
   #most-read-articles h3 {
     color: yellow;
   }
+
   /*-----------------------------
 		k. Single Article Page
 	------------------------------*/
   #single-article-header {
     height: auto;
   }
+
   .single-article-path {
     margin: 1rem auto 1rem 3rem;
   }
+
   .custom-form label,
   .custom-form .container {
     width: 10rem;
   }
+
   .custom-form {
     width: 60%;
   }
+
   #custom-form-button {
     right: 14%;
   }
+
   /*-----------------------------
 	m. Social Space Login Page
   ------------------------------*/
   .socialspace-login-header {
     height: 100% !important;
   }
+
   .container-login {
     margin-top: -100px;
   }
+
   /*-----------------------------
 	n. Social Space Main Page
   ------------------------------*/
   .user-info {
     margin-top: -50vh;
   }
+
   #threads-section {
     display: inline-block;
     width: 60%;
     margin-right: 3%;
     margin-bottom: 100px;
   }
+
   #socialspace-aside {
     display: inline-block;
     vertical-align: top;
     width: 30%;
   }
+
   .modal-content {
     width: 40%;
   }
